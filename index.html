@@ -1152,6 +1152,42 @@
             transform: translateY(-5px);
         }
 
+        .learn-more-link {
+            display: inline-block;
+            margin-top: 1.5rem;
+            font-family: var(--font-alt);
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            text-decoration: none;
+            position: relative;
+            padding-bottom: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .learn-more-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30%;
+            height: 1px;
+            background: var(--color-gold);
+            transition: width 0.4s var(--transition-luxury);
+        }
+
+        .learn-more-link:hover {
+            color: var(--color-black);
+            letter-spacing: 0.25em;
+        }
+
+        .learn-more-link:hover::after {
+            width: 100%;
+            background: var(--color-black);
+        }
+
         /* ===== CTA / BOOKING FORM ===== */
         .cta-section {
             background: #ffffff;
@@ -1614,6 +1650,7 @@
                         Capturing the intimate whispers, the grand celebrations, and every timeless moment of your love
                         story.
                     </p>
+                    <a href="packages.html#weddings" class="learn-more-link">Learn More</a>
                 </div>
 
                 <!-- Maternity -->
@@ -1627,6 +1664,7 @@
                         Capturing the beautiful glow, the quiet anticipation, and the miraculous journey of your path to
                         motherhood.
                     </p>
+                    <a href="packages.html#maternity" class="learn-more-link">Learn More</a>
                 </div>
 
                 <!-- Family -->
@@ -1640,6 +1678,7 @@
                         Freezing genuine smiles, warm hugs, and the unique connection that makes your family story
                         yours.
                     </p>
+                    <a href="packages.html#packages" class="learn-more-link">Learn More</a>
                 </div>
             </div>
         </div>
